@@ -20,8 +20,13 @@
   },
   "homepage": "https://github.com/Gumgooki/milestones#readme",
   "dependencies": {
+    "axios": "^0.23.0",
     "express": "^4.17.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "pg": "^8.7.1",
+    "react-redux": "^7.2.5",
+    "redux-logger": "^3.0.6",
+    "sequelize": "^6.7.0"
   },
   "engines": {
     "node": "12.16.3"
