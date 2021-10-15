@@ -1,4 +1,5 @@
 import React from "react";
+import { Sidebar } from "./components";
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      <Sidebar />
       <header className="App-header">
         <p>{!data ? "Loading..." : data}</p>
       </header>

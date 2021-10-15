@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 body {
@@ -20,4 +21,27 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100%;
+}
+
+.sideBar {
+  width: 136px;
+  background: #005684;
+  padding: 30px 0;
+}
+
+.sideBar img {
+  margin: 5px 0;
+}
+
+.navClick {
+  padding: 5px 0;
+  color: white;
+  font-weight: 400;
+  margin: 5px 0;
+  font-size: 0.8rem;
+}
+
+.navClickHighlight {
+  background: #1d2951;
 }
