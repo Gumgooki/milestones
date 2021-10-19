@@ -13,17 +13,17 @@ body {
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #00131a;
   width: 100%;
 }
 
+/* SIDEBAR AND NAVIGATION */
 .sideBar {
   width: 136px;
   background: #005684;
@@ -44,4 +44,62 @@ body {
 
 .navClickHighlight {
   background: #1d2951;
+}
+
+/* SINGLE MILESTONES */
+.SingleMilestoneContainer {
+  display: flex;
+}
+
+.SingleMilestoneContainer > h3 {
+  height: 34px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #00131a;
+}
+
+.MilestoneCal {
+  position: relative;
+  width: 52px;
+  margin: 0 25px;
+}
+
+.CalendarObj {
+  border: 1px solid #d2e7f2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  width: 52px;
+  height: 52px;
+}
+
+.MilestoneOverdue {
+  position: absolute;
+  left: 76.92%;
+  right: -23.08%;
+  top: -19.23%;
+  bottom: 73.08%;
+}
+
+.MonthCont {
+  color: white;
+  background: #005684;
+}
+
+.MonthCont h4 {
+  margin: 0;
+  font-size: 12px;
+  line-height: 120%;
+}
+
+.DayCont h4 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 120%;
+  align-items: center;
+  text-align: center;
+  color: #00131a;
 }

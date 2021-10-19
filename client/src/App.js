@@ -1,5 +1,5 @@
 import React from "react";
-import { Sidebar } from "./components";
+import { Sidebar, SingleMilestoneContainer } from "./components";
 import "./App.css";
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
       <Sidebar />
       <header className="App-header">
         <p>{!data ? "Loading..." : data}</p>
+        <SingleMilestoneContainer />
       </header>
     </div>
   );
