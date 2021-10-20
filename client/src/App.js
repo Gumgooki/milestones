@@ -1,5 +1,9 @@
 import React from "react";
-import { Sidebar, SingleMilestoneContainer } from "./components";
+import {
+  Sidebar,
+  SingleMilestoneContainer,
+  MilestoneCarousel,
+} from "./components";
 import "./App.css";
 
 function App() {
@@ -17,6 +21,7 @@ function App() {
       <header className="App-header">
         <p>{!data ? "Loading..." : data}</p>
         <SingleMilestoneContainer />
+        <MilestoneCarousel />
       </header>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from "react";
 import MilestoneCal from "./MilestoneCal";
 
-const SingleMilestoneContainer = () => {
+const SingleMilestoneContainer = (props) => {
   return (
     <div className="SingleMilestoneContainer">
       <MilestoneCal />
-      <h3>Believing Is The Absence Of Doubt</h3>
+      <h3>{props.description}</h3>
     </div>
   );
 };

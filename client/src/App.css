@@ -103,3 +103,9 @@ body {
   text-align: center;
   color: #00131a;
 }
+
+/* CAROUSEL STYLES */
+
+.carousel {
+  width: 100%;
+}
