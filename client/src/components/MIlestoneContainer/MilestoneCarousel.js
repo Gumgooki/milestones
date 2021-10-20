@@ -2,7 +2,7 @@ import { SingleMilestoneContainer, MilestoneCal } from "..";
 import React, { Component } from "react";
 import Carousel from "react-simply-carousel";
 
-const styles = { width: 300, height: 100 };
+const styles = { width: 300, height: 100, display: "flex" };
 
 class MilestoneCarousel extends Component {
   state = {
@@ -25,6 +25,10 @@ class MilestoneCarousel extends Component {
         infinite={false}
         containerProps={{
           width: "1500px",
+          display: "flex",
+          justifycontent: "center",
+          fontSize: "1rem",
+          overflow: "hidden",
         }}
       >
         <div style={styles}>
