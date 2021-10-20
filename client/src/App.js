@@ -1,5 +1,9 @@
 import React from "react";
-import { Sidebar } from "./components";
+import {
+  Sidebar,
+  SingleMilestoneContainer,
+  MilestoneContainer,
+} from "./components";
 import "./App.css";
 
 function App() {
@@ -15,7 +19,8 @@ function App() {
     <div className="App">
       <Sidebar />
       <header className="App-header">
-        <p>{!data ? "Loading..." : data}</p>
+        {/* <p>{!data ? "Loading..." : data}</p> */}
+        <MilestoneContainer />
       </header>
     </div>
   );
