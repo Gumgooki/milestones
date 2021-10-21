@@ -1,27 +1,33 @@
 import axios from "axios";
 const GET_ALL_MILESTONES = "GET_ALL_MILESTONES";
 
-const defaultMilestones = {
-  allMilestones: [],
-};
-
 const getAllMilestones = (allMilestones) => ({
   type: GET_ALL_MILESTONES,
   payload: allMilestones,
 });
 
-export const receiveMilestones = () => async (dispatch) => {
-  try {
-    const { data } = await axios.get("/api/milestones");
-    dispatch(getAllMilestones(data));
-  } catch (err) {
-    console.log(err);
-  }
+const defaultMilestones = {
+  allMilestones: [],
 };
 
-export default function dummyReducer(state = defaultMilestones, action) {
+export const receiveMilestones = () => {
+  return async (dispatch) => {
+    try {
+      let response = await axios.get("/api/milestones");
+      return dispatch(getAllMilestones(response.data));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+};
+
+export default function allMilestonesReducer(
+  state = defaultMilestones,
+  action
+) {
   switch (action.type) {
     case GET_ALL_MILESTONES:
+      console.log("getting milestones");
       return { ...state, allMilestones: [...action.payload] };
     default:
       return state;

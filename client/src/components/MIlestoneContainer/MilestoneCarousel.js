@@ -1,4 +1,4 @@
-import { SingleMilestoneContainer, MilestoneCal } from "..";
+import { SingleMilestoneContainer } from "..";
 import React, { Component } from "react";
 import Carousel from "react-simply-carousel";
 

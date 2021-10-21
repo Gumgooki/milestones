@@ -1,19 +1,15 @@
 import React from "react";
-import {
-  Sidebar,
-  SingleMilestoneContainer,
-  MilestoneContainer,
-} from "./components";
+import { Sidebar, MilestoneContainer } from "./components";
 import "./App.css";
 
 function App() {
-  const [data, setData] = React.useState(null);
+  // const [data, setData] = React.useState(null);
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
+  // React.useEffect(() => {
+  //   fetch("/api")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data.message));
+  // }, []);
 
   return (
     <div className="App">
