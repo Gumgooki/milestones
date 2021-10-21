@@ -17,7 +17,7 @@ app.use("/api", require("./api"));
 //   res.json({ message: "Hello from server!" });
 // });
 
-db.sync({ force: true });
+// db.sync({ force: true });
 
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "..client/build", "index.html"));

@@ -4,7 +4,7 @@ const router = require("express").Router();
 
 router.get("/", async (req, res, next) => {
   try {
-    const allMilestones = await Milestone.findAll();
+    let allMilestones = await Milestone.findAll();
     res.json(allMilestones);
   } catch (err) {
     next(err);
